@@ -1,0 +1,551 @@
+/* fonts */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-BoldItalic.eot');
+    src: url('../fonts/Montserrat-BoldItalic-.eot#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Montserrat-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-BlackItalic.eot');
+    src: url('../fonts/Montserrat-BlackItalic-.eot#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Montserrat-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* styles */
+body{
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #fff;
+    background: #000;
+}
+.wrap {
+    width: 480px;
+    padding: 0;
+    margin: 0 auto;
+    background: #000;
+}
+section {
+    padding: 40px 0;
+}
+section, footer {
+    width: 100%;
+    position: relative;
+}
+.wrap:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+b {
+    font-weight: 700;
+}
+
+
+/*form*/
+.main_form {
+    padding: 0 25px;
+}
+.main_form input{
+    border: none;
+    background: #fafafa;
+    width: 100%;
+    height: 75px;
+    font-size: 16px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #222;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.main_form ::-webkit-input-placeholder {
+    color: #333;
+}
+.main_form ::-moz-placeholder {
+    color: #333;
+}
+.main_form :-moz-placeholder {
+    color: #333;
+}
+.main_form :-ms-input-placeholder {
+    color: #333;
+}
+.main_form :focus::-webkit-input-placeholder {
+    color: transparent;
+}
+.main_form :focus::-moz-placeholder {
+    color: transparent;
+}
+.main_form :focus:-moz-placeholder {
+    color: transparent;
+}
+.main_form :focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+/* button */
+.button {
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 390px;
+    height: 76px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background: #ffc301;
+  
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc301', endColorstr='#ff8400',GradientType=0 );
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 22px;
+    line-height: 76px;
+    text-transform: uppercase;
+    text-align: center;
+   
+}
+.button:active{
+    background: #ff8400;
+    background: -moz-linear-gradient(top, #ff8400 0%, #ffc301 100%);
+    background: -webkit-linear-gradient(top, #ff8400 0%,#ffc301 100%);
+    background: linear-gradient(to bottom, #ff8400 0%,#ffc301 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8400', endColorstr='#ffc301',GradientType=0 );
+    top: 2px;
+}
+
+
+/* titles */
+h2.title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.3em;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+h2.title span{
+    color: #ffc301;
+}
+
+
+
+
+.color_theme{
+    background: #ccc;
+}
+.color_theme h2.title{
+    color: #fff;
+}
+
+
+
+
+/*offer*/
+.offer{
+    padding: 0 0 40px;
+}
+.offer .top_line{
+    background: #1b1b1b;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.offer .top_line .logo img{
+    display: block;
+}
+.offer .top_line .text{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.2em;
+    font-style: italic;
+    text-align: right;
+    font-weight: 700;
+}
+.offer .top_line .text small{
+    color: #ffc301;
+    font-size: 13px;
+    line-height: 1.1em;
+}
+.offer_img img{
+    display: block;
+}
+
+.price_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price_block .price{
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price_block .price small{
+    font-size: 0.7em;
+}
+.price_block .price .old{
+    margin-right: 15px;
+    font-size: 28px;
+    line-height: 1.1em;
+    color: #838383;
+}
+.price_block .price .old span{
+    text-decoration: line-through;
+}
+.price_block .price .new{
+    color: #ffc301;
+    font-size: 37px;
+    line-height: 1.1em;
+    font-weight: 700;
+}
+
+.price_block .sale{
+    height: 56px;
+    line-height: 56px;
+    width: 220px;
+    text-align: center;
+    background: #ffc301;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 700;
+    color: #000;
+    position: relative;
+}
+.price_block .sale:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 56px 10px;
+    border-color: transparent transparent #ffc301 transparent;
+    position: absolute;
+    top: 0;
+    left: -9px;
+}
+
+.date_sale{
+    text-align: center;
+    color: #6e6e6e;
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 1.2em;
+}
+
+.bullet_block{
+    margin-top: 15px;
+    padding-top: 40px;
+    background: url("../images/bullet_bg.png") 50% 0% no-repeat;
+}
+.offer_bull{
+    display: flex;
+    justify-content: space-between;
+}
+.offer_bull>li{
+    width: 33.3%;
+    padding: 0 15px;
+    text-align: center;
+}
+.offer_bull>li>img{
+    display: block;
+    margin: 0 auto 10px;
+}
+
+
+.formbox{
+    max-width: 440px;
+    margin: 45px auto 0;
+    background: #1b1b1b;
+    padding: 25px 0 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.formbox span{
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.1em;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.formbox p:last-of-type{
+    margin-bottom: 25px;
+}
+
+
+/*sect1*/
+.sect1>p{
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.bull1{
+    padding: 0 20px;
+}
+.bull1>li{
+    margin-bottom: 50px;
+}
+.bull1>li:last-child{
+    margin-bottom: 0;
+}
+.bull1>li .img{
+    position: relative;
+    margin-bottom: 20px;
+}
+.bull1>li .img>img{
+    display: block;
+}
+.bull1>li .img .text{
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+    padding: 0 6px;
+    height: 56px;
+    line-height: 56px;
+    background: #ffc301;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+}
+.bull1>li .img .text:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 56px 14px;
+    border-color: transparent transparent #ffc301 transparent;
+    position: absolute;
+    left: -13px;
+    top: 0;
+}
+.bull1>li .img .text:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 56px 14px 0 0;
+    border-color: #ffc301 transparent transparent transparent;
+    position: absolute;
+    right: -13px;
+    top: 0;
+}
+
+.sect1 a{
+    margin-top: 40px;
+}
+
+
+
+
+/*sect2*/
+.sect2{
+    padding: 20px 0 0;
+}
+.sect2>p{
+    padding: 0 20px;
+    margin-bottom: 25px;
+}
+
+.video_block{
+    width: 440px;
+    height: 300px;
+    margin: 0 auto 30px;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+.video_block iframe,
+.video_block object,
+.video_block video,
+.video_block embed,
+.video_block .youtube{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.alert_text{
+    padding: 10px 20px;
+    background: #ffc301;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #000;
+}
+
+.reviews{
+    padding: 0 20px;
+}
+
+.rev_item{
+    background: #1b1b1b;
+    padding-bottom: 25px;
+}
+.rev_item img{
+    display: block;
+    margin: 0 auto 25px;
+}
+.rev_item p{
+    padding: 0 15px;
+}
+.rev_item p:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.owl-dots{
+    font-size: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+.owl-dots .owl-dot{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    display: inline-block;
+    margin: 0 3px;
+}
+.owl-dots .owl-dot.active{
+    background: #ffc301;
+}
+
+.reviews .owl-prev,
+.reviews .owl-next{
+    position: absolute;
+    top: 175px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ffc301 url("../images/rev_arrow.png") 0% 50% no-repeat;
+}
+.reviews .owl-prev{
+    left: 25px;
+}
+.reviews .owl-next{
+    right: 25px;
+    background-position: 100% 50%;
+}
+
+
+
+
+/*sect4*/
+.sect4{
+    padding-top: 0;
+}
+.order_block{
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 25px 20px 30px;
+    background: #ffc301;
+}
+.order_block .title{
+    color: #000;
+    padding: 0;
+}
+
+.order_bull{
+    color: #000;
+    padding: 0 20px;
+}
+.order_bull>li{
+    display: flex;
+}
+.order_bull>li>span{
+    width: 50px;
+    text-align: center;
+    flex-shrink: 0;
+    font-weight: 900;
+    font-size: 76px;
+    line-height: 1.1em;
+    font-style: italic;
+}
+.order_bull>li .text{
+    margin-left: 50px;
+}
+.order_bull>li .text b{
+    display: block;
+}
+
+
+
+
+/*sect5*/
+.sect5{
+    padding: 10px 0 50px;
+}
+.sect5 .title span{
+    display: block;
+}
+.sect5>p{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.sect5>p:last-child{
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+.cpu{
+    padding: 20px 0;
+    text-align: center;
+    background: #222;
+    color: #fff;
+}
+.cpu img{
+    display: block;
+    margin: 0 auto 10px;
+}
+.cpu a{
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: top;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.1em;
+    text-decoration: none;
+}
+.cpu a:hover{
+    text-decoration: underline;
+}
+
